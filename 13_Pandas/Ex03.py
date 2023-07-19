@@ -111,6 +111,62 @@ print('df2:\n',df2)
 print()
 
 
+s  = pd.Series(['A','B','C','D','E','F','G'],
+               index=[49,48,47,46,2,3,4])
+print('s:\n',s)
+print()
+
+#인덱스로 조회
+print(s[3])
+print(s[47])
+print(s.loc[3])
+print(s.loc[47])
+#위치번호로 조회
+print(s.iloc[3])
+
+#처음부터 3인덱스까지, 3포함
+print(s.loc[:3])
+print()
+
+#0부터 3 앞까지, 3 미포함
+print(s.iloc[:3])
+print()
+
+print('df:\n',df)
+print()
+
+#데이터프레임의 loc
+print(df.loc['two'])
+print(type(df.loc['two']))
+print()
+print(df.loc[['two']])
+print(type(df.loc[['two']]))
+print(df.iloc[[1,3]])
+print()
+
+#loc으로 원하는 데이터만 출력
+print(df.loc[['two','three'],['서울','광주']])
+#        서울  광주
+# two     4   6
+# three   8  10
+print()
+
+print('df:\n',df)
+print()
+
+#해당 칼럼에서 5보다 큰 것에 True
+print(df['부산'] > 5)
+print()
+
+#해당 칼럼 중 조건에 맞는 것만 출력
+print(df[df['부산'] > 5])
+print()
+
+
+
+
+
+
 
 
 

@@ -25,7 +25,7 @@ print('df:\n',df)
 # 1  4  5  6
 print(type(df)) #pandas.core.frame.DataFrame
 print(df.ndim,df.shape)
-#데이터프레임의 요소를 출력할 때는 칼럼명을 먼저 작성
+#데이터프레임의 요소를 출력할 때는 칼럼을 먼저 작성
 #print(df[1][2])
 print(df[2][1])
 print()
