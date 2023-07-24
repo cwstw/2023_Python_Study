@@ -30,15 +30,13 @@ plt.xlabel('x축')
 plt.ylabel('y축',rotation=0)
 plt.title('Ex02 예제')
 
+#화살표
 plt.annotate('annotate',xy=(1.5,5),xytext=(2,4),arrowprops={'color':'blue'})
 plt.legend()
 
 filename = 'brokenLine.png'
 plt.savefig(filename)
 plt.show()
-
-
-
 
 
 
